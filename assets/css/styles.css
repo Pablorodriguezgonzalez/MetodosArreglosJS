@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.todo-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: silver;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 24px;
+}
+
+hr {
+  margin: 10px 0 20px 0;
+  border: 1px solid #ddd;
+}
+
+label {
+  display: block;
+}
+
+.add-task {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.add-task input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-task button {
+  width: 25%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  background-color: #218838;
+}
+
+.task-summary {
+  margin-bottom: 20px;
+}
+
+.asistente {
+  display: flex;
+  padding: 1px;
+}
+
+.idAsistente {
+  width: 30%;
+}
+
+.nombreAsistente {
+  width: 50%;
+}
+
+.estadoTarea {
+  width: 10%;
+}
+
+.accionBoton {
+  width: 10%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  cursor: pointer;
+}
