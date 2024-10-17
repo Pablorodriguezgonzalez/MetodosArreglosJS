@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- metadatos -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esta pagina contiene ejercicios de Arreglos y Objetos con JS"
+    />
+    <meta name="keywords" content="html, javascript, Pablo Rodriguez" />
+    <meta name="author" content="Pablo Rodriguez" />
+    <meta name="robots" content="index, follow" />
+    <title>Desafío - Todo List</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1>Todo List</h1>
+      <hr />
+      <div class="add-task">
+        <form>
+          <label for="nuevo_sh">Nueva tarea</label>
+          <input type="text" id="new_task" required />
+          <button onclick="agregarTarea(event);" type="button">Agregar</button>
+        </form>
+      </div>
+      <table id="tabla">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Tarea</th>
+            <th>Estado</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
+        <tbody id="lista_tareas">
+          <!-- Aquí se insertarán dinámicamente las filas generadas con JavaScript -->
+        </tbody>
+      </table>
+      <br />
+      <div class="task-summary">
+        <p>Total:<span id="total"></span></p>
+        <p>Realizadas:<span id="realizadas"></span></p>
+      </div>
+    </div>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
